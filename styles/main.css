@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=BioRhyme&family=Comic+Neue&family=EB+Garamond&family=Inconsolata&family=Moon+Dance&family=Oooh+Baby&display=swap');
+
+:root {
+    --deep: #272727;
+    --white: #FDF7FA;
+    --light: #58A4B0;
+    --light2: #8FF7A7;
+    --offblack: #292F36;
+}
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    line-height: 2;
+    max-width: 600px;
+    font-size: 18px;
+    font-family: 'Comic Neue', cursive;
+}
+
+img{
+    width: 20%;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 8px 0px var(--offblack);
+}
+
+h1 {
+    font-size: 30px;
+}
+
+#picture_text {
+    background-color: var(--light);
+    color: var(--white);
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 8px 0px var(--offblack);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#bottom {
+    background-color: var(--light);
+    color: var(--white);
+    padding: 0.4rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 8px 0px var(--offblack);
+    text-align: center;
+}
+
+#bottom .date, #bottom .date span {
+    /* font-size: small; */
+    color: var(--offblack);
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 0.2rem;
+}
+
+.content {
+    padding: 1rem;
+}
+
+.content ul li {
+    font-family: 'Inconsolata', monospace;
+}
+
+.sub {
+    font-family: 'EB Garamond', serif;
+    font-size: larger;
+    text-align: center;
+}
