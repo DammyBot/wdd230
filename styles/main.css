@@ -28,7 +28,7 @@ h1 {
 }
 
 #picture_text {
-    background-color: var(--light);
+    background-color: var(--deep);
     color: var(--white);
     padding: 1rem;
     margin: 0.5rem;
@@ -41,7 +41,7 @@ h1 {
 }
 
 #bottom {
-    background-color: var(--light);
+    background-color: var(--deep);
     color: var(--white);
     padding: 0.4rem;
     margin: 0.5rem;
@@ -52,7 +52,7 @@ h1 {
 
 #bottom .date, #bottom .date span {
     /* font-size: small; */
-    color: var(--offblack);
+    color: var(--light);
 }
 
 h2 {
