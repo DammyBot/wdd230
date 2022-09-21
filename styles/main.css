@@ -41,6 +41,10 @@ h1 {
     align-items: center;
 }
 
+#picture_text h1 {
+    font-size: 0.6rem;
+}
+
 #picture_text img {
     margin: 0;
 }

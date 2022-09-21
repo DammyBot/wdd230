@@ -35,4 +35,8 @@
     #bottom p, .date, #year, #currentdate {
         font-size: 18px;
     }
+
+    #picture_text h1 {
+        font-size: 1rem;
+    }
 }
