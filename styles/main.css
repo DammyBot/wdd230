@@ -15,16 +15,17 @@
     max-width: 600px;
     font-size: 18px;
     font-family: 'Comic Neue', cursive;
+    /* text-decoration: none; */
 }
 
 img{
-    width: 20%;
-    border-radius: 1rem;
-    box-shadow: 0px 0px 8px 0px var(--offblack);
+    width: 50px;
+    border-radius: 0.5rem;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: small;
+    padding: auto;
 }
 
 #picture_text {
@@ -32,12 +33,16 @@ h1 {
     color: var(--white);
     padding: 1rem;
     margin: 0.5rem;
-    border-radius: 1rem;
-    box-shadow: 0px 0px 8px 0px var(--offblack);
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 4px 0px var(--offblack);
 
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+#picture_text img {
+    margin: 0;
 }
 
 #bottom {
@@ -45,18 +50,17 @@ h1 {
     color: var(--white);
     padding: 0.4rem;
     margin: 0.5rem;
-    border-radius: 1rem;
-    box-shadow: 0px 0px 8px 0px var(--offblack);
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 4px 0px var(--offblack);
     text-align: center;
 }
 
 #bottom .date, #bottom .date span {
-    /* font-size: small; */
     color: var(--light);
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 1rem;
     text-align: center;
     padding: 0.2rem;
 }
@@ -67,10 +71,20 @@ h2 {
 
 .content ul li {
     font-family: 'Inconsolata', monospace;
+    font-size: small;
+}
+
+.content ul li a {
+    font-family: 'Inconsolata', monospace;
+    font-size: small;
 }
 
 .sub {
     font-family: 'EB Garamond', serif;
-    font-size: larger;
+    font-size: smaller;
     text-align: center;
+}
+
+#bottom p, .date, #year, #currentdate {
+    font-size: 0.8rem;
 }
