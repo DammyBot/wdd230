@@ -1,0 +1,37 @@
+@media (max-width: 65em) {
+    .grid_home {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .images_text_explanation_3 {
+        grid-column: span 2;
+    }
+
+    h2 {
+        font-size: smaller;
+    }
+
+    h3 {
+        font-size: smaller;
+    }
+
+    h4 {
+        font-size: smaller;
+    }
+
+    p {
+        font-size: smaller;
+    }
+
+    a {
+        font-size: smaller;
+    }
+
+    footer {
+        font-size: smaller;
+    }
+
+    #current_year, #updated_date_and_time {
+        font-size: smaller;
+    }
+}

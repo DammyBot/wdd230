@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=BioRhyme&family=Comic+Neue&family=EB+Garamond&family=Inconsolata&family=Moon+Dance&family=Oooh+Baby&display=swap');
+
+:root {
+    --one: #D3D4D9;
+    --two: #4B88A2;
+    --three: #BB0A21;
+    --four: #252627;
+    --five: #FFF9FB;
+    /* --one: #05386B;
+    --two: #379683;
+    --three: #5CDB95;
+    --four: #8EE4AF;
+    --five: #EDF5E1; */
+}
+
+* {
+    margin: 0 auto;
+    max-width: 900px;
+    line-height: 1.5;
+    font-size: 18px;
+    /* text-align: center; */
+
+    font-family: 'Comic Neue', cursive;
+}
+
+img {
+    width: 95%;
+    display: block;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+
+    font-family: 'BioRhyme', serif;
+}
+
+h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+}
+
+h4 {
+    font-size: 1rem;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    background-color: var(--four);
+    color: white;
+    font-weight: 100;
+    padding: 0.3rem;
+}
+
+p, a {
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+#main_header {
+    background-color: var(--four);
+    color: var(--five);
+    margin: 0.2rem;
+    padding: 0.8rem;
+    text-align: center;
+    /* border-radius: 1rem; */
+}
+
+footer {
+    background-color: var(--four);
+    color: var(--five);
+    margin: 0.1rem;
+    padding: 0.1rem;
+    text-align: center;
+    font-size: larger;
+    /* border-radius: 1rem; */
+}
+
+.grid_home {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin: 1rem;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+.images_text_explanation_1,
+.images_text_explanation_2 {
+    background-color: rgb(240, 236, 236);
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    line-height: 1.1;
+}
+
+.images_text_explanation_3 {
+    background-color: rgb(240, 236, 236);
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    line-height: 1.1;
+
+    grid-column: span 1;
+}
+
+#cuurent_year, #updated_date_and_time {
+    font-size: 1rem;
+}
