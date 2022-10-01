@@ -1,0 +1,88 @@
+@media only screen and (max-width: 480px){
+    img:nth-last-of-type(1){
+        width: 5rem;
+        padding: 0.5rem;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    #header ul{
+        flex-direction: column;
+    }
+
+    .content_1, .content_2, .content_3{
+        font-size: small;
+        padding: 0.5rem;
+    }
+
+    a{
+        font-size: larger;
+        padding: 0.5rem;
+    }
+
+    footer p, #year, #date_and_time{
+        font-size: small;
+    }   
+
+    h1{
+        font-size: x-large;
+    }
+
+    .name{
+        font-size: large;
+    }
+
+    .first img{
+        width: 15rem;
+    }
+
+    ul li{
+        font-size: 0.8rem;
+    }
+
+    ul li b{
+        font-size: 0.8rem;
+    }
+
+    .element{
+        padding: 0.5rem;
+        text-align: center;
+    }
+    
+    .head_1{
+        padding: 0.2rem;
+        margin: 0.2rem;
+        text-align: center;
+        font-size: medium;
+    }
+    
+    .head_1:nth-of-type(1){
+        padding: 0.2rem;
+        margin: 0.2rem;
+        text-align: center;
+        font-size: medium;
+    }
+    
+    .head_2{
+        padding: 0.2rem;
+        margin: 0.2rem;
+        text-align: center;
+        font-size: medium;
+    }
+    
+    .head_3{
+        padding: 0.2rem;
+        margin: 0.2rem;
+        text-align: center;
+        font-size: medium;
+    }
+    
+    h2{
+        padding: 0.2rem;
+        margin: 0.2rem;
+        /* text-align: center; */
+        font-size: medium;
+    }
+}

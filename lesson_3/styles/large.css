@@ -42,8 +42,13 @@ footer{
     color: var(--deep);
 }   
 
+footer p, #year, #date_and_time{
+    font-size: 1rem;
+}
+
 .container{
     display: flex;
+    flex-flow: row;
     align-items: center;
     justify-content: space-between;
 }
@@ -115,6 +120,7 @@ h1{
     padding-right: 10rem;
     padding-top: 1rem;
     margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 .head_1:nth-of-type(1){
@@ -123,6 +129,7 @@ h1{
     padding-right: 8rem;
     padding-top: 1rem;
     margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 .head_2{
@@ -131,6 +138,7 @@ h1{
     padding-right: 7.7rem;
     padding-top: 1rem;
     margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 .head_3{
@@ -139,10 +147,12 @@ h1{
     padding-right: 10rem;
     padding-top: 1rem;
     margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 h2{
     padding: 1rem;
+    font-size: 1rem;
 }
 
 .container_1{
@@ -169,6 +179,13 @@ ul li{
     font-family: 'Bree Serif', serif;
     color: var(--deep);
     padding: 1rem;
+    font-size: 1rem;
+}
+
+ul li b{
+    font-family: 'Bree Serif', serif;
+    color: var(--deep);
+    font-size: 1rem;
 }
 
 .name{
@@ -176,3 +193,183 @@ ul li{
     color: var(--deep);
     font-size: 1.2rem;
 }
+
+/* Small screen view */
+/* @media only screen and (max-width: 480px){
+    img:nth-last-of-type(1){
+        width: 5rem;
+        padding: 0.5rem;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    #header ul{
+        flex-direction: column;
+    }
+
+    .content_1, .content_2, .content_3{
+        font-size: small;
+        padding: 0.5rem;
+    }
+
+    a{
+        font-size: larger;
+        padding: 0.5rem;
+    }
+
+    footer p, #year, #date_and_time{
+        font-size: small;
+    }   
+
+    h1{
+        font-size: x-large;
+    }
+
+    .name{
+        font-size: large;
+    }
+
+    .first img{
+        width: 15rem;
+    }
+
+    ul li{
+        font-size: 0.8rem;
+    }
+
+    ul li b{
+        font-size: 0.8rem;
+    }
+
+    .element{
+        padding: 0.5rem;
+        text-align: center;
+    }
+    
+    .head_1{
+        padding: 0.2rem;
+        margin: 0.2rem;
+        text-align: center;
+        font-size: medium;
+    }
+    
+    .head_1:nth-of-type(1){
+        padding: 0.2rem;
+        margin: 0.2rem;
+        text-align: center;
+        font-size: medium;
+    }
+    
+    .head_2{
+        padding: 0.2rem;
+        margin: 0.2rem;
+        text-align: center;
+        font-size: medium;
+    }
+    
+    .head_3{
+        padding: 0.2rem;
+        margin: 0.2rem;
+        text-align: center;
+        font-size: medium;
+    }
+    
+    h2{
+        padding: 0.2rem;
+        margin: 0.2rem;
+        text-align: center;
+        font-size: medium;
+    }
+}  */
+
+/* Tablet View */
+@media only screen and (max-width: 768px){
+    img:nth-last-of-type(1){
+        width: 5rem;
+        padding: 0.5rem;
+    }
+
+    .container{
+        flex-direction: row;
+    }
+
+    #header ul{
+        flex-direction: row;
+    }
+
+    .content_1, .content_2, .content_3{
+        font-size: small;
+        padding: 0.5rem;
+    }
+
+    a{
+        font-size: x-large;
+        padding: 0.5rem;
+    }
+
+    footer p, #year, #date_and_time{
+        font-size: small;
+    }   
+
+    h1{
+        font-size: x-large;
+    }
+
+    .name{
+        font-size: large;
+    }
+
+    .first img{
+        width: 15rem;
+    }
+
+    ul li{
+        font-size: 0.8rem;
+    }
+
+    ul li b{
+        font-size: 0.8rem;
+    }
+
+    .element{
+        padding: 0.5rem;
+        text-align: center;
+    }
+    
+    .head_1{
+        padding: 0.2rem;
+        margin: 0.2rem;
+        text-align: center;
+        font-size: medium;
+    }
+    
+    .head_1:nth-of-type(1){
+        padding: 0.2rem;
+        margin: 0.2rem;
+        text-align: center;
+        font-size: medium;
+    }
+    
+    .head_2{
+        padding: 0.2rem;
+        margin: 0.2rem;
+        text-align: center;
+        font-size: medium;
+    }
+    
+    .head_3{
+        padding: 0.2rem;
+        margin: 0.2rem;
+        text-align: center;
+        font-size: medium;
+    }
+    
+    h2{
+        padding: 0.2rem;
+        margin: 0.2rem;
+        /* text-align: center; */
+        font-size: medium;
+    }
+} 
