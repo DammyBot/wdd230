@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ibadan chamber of commerce home page">
+    <title>Ibadan Chamber of Commerce</title>
+
+    <!-- CSS -->
+    <!-- Normalize -->
+    <link href="../styles/normalize.css" rel="stylesheet">
+    <!-- Small screen View -->
+    <link href="styles/base.css" rel="stylesheet">
+    <!-- Medium sreen view -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- Large screen view -->
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <img id="mainLogo" src="images/tempsnip.png" alt="Logo">
+            <div id="mainText">
+                <dt>Ibadan</dt>
+                <dd>Chamber of Commerce</dd>
+            </div>
+            <a><img class="logos" src="images/facebook.png"></a>
+            <a><img class="logos" src="images/instagram.png"></a>
+            <button id="hamburgerBtn">&#9776;</button>
+            <!-- <span><button>X</button></span> -->
+        </div>
+        <span id="current_date"></span>
+    </header>
+    <nav>
+        <ul id="mainNavigation">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="one">
+            <p>Hero with site name and call to action</p>
+        </div>
+        <div class="two">
+            <p>Event</p>
+        </div>
+        <div class="three">
+            <p>Weather</p>
+        </div>
+        <div class="four">
+            <p>News Release</p>
+        </div>
+        <div class="five">
+            <p>Spotlight 1</p>
+            <p>Spotlight 2</p>
+        </div>
+    </main>
+    <footer>
+        <img class="mainLogo" src="images/tempsnip.png" alt="Logo">
+        <div>
+            <dt class="subOne">Ibadan Chamber of Commerce</dt>
+            <dd class="subTwo">Ologuneru, Ibadan</dd>
+        </div>
+        <div class="fooer">
+            <p>oluwadamilareobalana@gmail.com</p>
+            <p>+(234)8033684774</p>
+            <p>🍭 Location Map</p>
+        </div>
+        <hr>
+        <div class="fooerOne">
+        <p>&copy;<span id="currentYear"></span> Ibadan Chamber</p>
+        <P><b>Oluwadamilare Obalana</b></P>
+        <dd>WDD 230 Project</dd>
+        <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <!-- Attaching the Javascript -->
+    <script src="scripts/hamburger.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dongle:wght@300;400&display=swap');
+
+/* font-family: 'Bree Serif', serif; */
+/* font-family: 'Dongle', sans-serif; */
+
+/* Global selector */
+:root{
+    --headers: #012A4A;
+    --background: #A9D6E5;
+    --main: #2C7DA0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    line-height: 2;
+}
+
+nav ul#mainNavigation li{
+    list-style-type: none;
+}
+
+nav ul#mainNavigation li a{
+    text-decoration: none;
+}
+
+#mainLogo{
+    width: 20%;
+    margin: .2rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 0px var(--offblack);
+}
+
+.logos{
+    width: 70%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 0px var(--offblack);
+}
+
+#hamburgerBtn{
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: var(--background);
+}
+
+header{
+    background-color: var(--headers);
+    color: white;
+    padding: .1rem;
+}
+
+div#header{
+    display: flex;
+    justify-content: space-between;
+    padding: .2rem;
+}
+
+#current_date{
+    background-color: var(--background);
+    padding: .5rem;
+    margin: .5rem 2rem;
+    display: block;
+    text-align: center;
+    font-size: x-small;
+}
+
+dt{
+    font-family: 'Bree Serif', serif;
+    font-size: small;
+}
+
+dd{
+    font-family: 'Bree Serif', serif;
+    font-size: xx-small;
+}
+
+nav ul#mainNavigation{
+    border-bottom: 1px solid rgba(0,0,0,.5);
+}
+
+nav ul#mainNavigation li a{
+    display: block;
+    text-align: center;
+    padding: .2rem;
+    border-top: 1px solid rgba(0,0,0,.5);
+    color: black;
+    font-family: 'Bree Serif', serif;
+    font-size: x-small;
+    background-color: var(--background);
+}
+
+nav ul#mainNavigation li a.active{
+    background-color: var(--main);
+    color: white;
+}
+
+nav ul#mainNavigation li a:hover{
+    background-color: var(--headers);
+    color: white;
+}
+
+nav ul#mainNavigation{
+    display: none;
+}
+
+nav ul#mainNavigation.open{
+    display: block;
+}
+
+.one, .two, .three, .four{
+    padding-bottom: 6rem;
+    margin: 1rem;
+    background-color: #eee;
+    border: 1px solid rgba(0,0,0,.5);
+}
+
+.one p, .two p, .three p, .four p{
+    padding: .2rem;
+    margin: .2rem;
+    font-family: 'Dongle', sans-serif;
+    font-size: large;
+}
+
+.five{
+    padding: 1rem 0rem 1rem 0rem;
+    margin: 1rem;
+    background-color: #eee;
+    border: 1px solid rgba(0,0,0,.5);
+}
+
+.five p{
+    padding: 5rem 1rem;
+    margin: .2rem .5rem;
+    font-family: 'Dongle', sans-serif;
+    font-size: large;
+    border: 1px solid rgba(0,0,0,.5);
+}
+
+footer{
+    background-color: var(--headers);
+    color: white;
+}
+
+img.mainLogo{
+    width: 40%;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    box-shadow: 0px 0px 4px 0px var(--offblack);
+}
+
+.subOne{
+    text-align: center;
+    font-size: medium;
+    padding: .2rem;
+}
+
+.subTwo, .fooer p{
+    text-align: center;
+    font-size: x-small;
+    padding: .2rem;
+}
+
+.fooerOne p, .fooerOne dd{
+    text-align: center;
+    font-size: xx-small;
+    padding: .2rem;
+}

@@ -16,3 +16,7 @@ lesson_2.href = "lesson_2/design-principles.html"
 const lesson_3 = document.querySelector(".lesson_3")
 lesson_3.textContent = "Website Planning Document"
 lesson_3.href = "lesson_3/index.html"
+
+const lesson_4 = document.querySelector(".lesson_4");
+lesson_4.textContent = "Chambers Home page";
+lesson_4.href = "../lesson_4/index.html";
