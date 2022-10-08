@@ -14,3 +14,6 @@ function toggleMenu(){
 }
 const x = document.getElementById("hamburgerBtn");
 x.onclick = toggleMenu
+
+const current_year = document.getElementById("currentYear");
+current_year.textContent = new Date().getFullYear();
