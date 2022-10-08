@@ -19,4 +19,4 @@ lesson_3.href = "lesson_3/index.html"
 
 const lesson_4 = document.querySelector(".lesson_4");
 lesson_4.textContent = "Chambers Home page";
-lesson_4.href = "../lesson_4/index.html";
+lesson_4.href = "lesson_4/index.html";
