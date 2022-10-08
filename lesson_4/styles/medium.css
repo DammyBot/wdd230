@@ -1,0 +1,124 @@
+@media only screen and (min-width: 42rem){
+    dt{
+        font-size: x-large;
+    }
+    
+    dd{
+        font-size: medium;
+    }
+
+    .logos{
+        width: 100%;
+
+    }
+
+    #hamburgerBtn{
+        font-size: 2.5rem;
+    }
+
+    nav ul#mainNavigation li a{
+        padding: .2rem;
+        font-size: smaller;
+    }
+
+    #current_date{
+        margin: .5rem .5rem;
+        font-size: small;
+    }
+
+    .mainBody{
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .four{
+        grid-row: 2/3;
+        /* grid-column: 1/2; */
+    }
+
+    .five{
+        grid-row: 3/4;
+    }
+
+    .two{
+        grid-row: 5/6;
+    }
+
+    .one p, .two p, .three p, .four p{
+        padding: .5rem;
+        margin: .5rem;
+        font-size: larger;
+    }
+
+    .six{
+        display: block;
+        padding: .5rem;
+        margin: 1rem;
+        font-size: larger;
+    }
+
+    .six p{
+        padding: .3rem;
+        margin: .2rem;
+        font-size: larger;
+    }
+
+    .five{
+        padding: 1rem 0rem 1rem 0rem;
+        margin: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .five p{
+        padding: .5rem 10rem 10rem 1rem;
+        margin: 0rem 0rem;
+        font-size: larger;
+    }
+
+
+
+
+    img.mainLogo{
+        width: 20%;
+        border-radius: 50%;
+        display: inline;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .subOne{
+        text-align: start;
+        font-size: small;
+        padding: 0rem;
+        margin-right: 10rem;
+    }
+    
+    .subTwo, .fooer p{
+        text-align: start;
+        font-size: xx-small;
+        padding: .05rem;
+        margin-right: .8rem;
+    }
+
+    .fooerOne{
+        display: flex;
+        justify-content: center;
+        /* margin-right: .5rem; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fooerOne p, .fooerOne dd{
+        font-size: x-small;
+    }
+
+    footer hr{
+        display: none;
+    }
+}
