@@ -35,6 +35,10 @@
         justify-content: space-around;
     }
 
+    nav ul#mainNavigation.open{
+        display: flex;
+    }
+
     nav ul#mainNavigation li a{
         display: inline;
         padding: .5rem;
