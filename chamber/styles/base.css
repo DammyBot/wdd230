@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dongle:wght@300;400&display=swap');
+
+/* font-family: 'Bree Serif', serif; */
+/* font-family: 'Dongle', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+:root{
+    --headers: #012A4A;
+    --background: #A9D6E5;
+    --main: #2C7DA0;
+}
+
+/* Header */
+#homeLogo1{
+    width: 4rem;
+    /* padding: .2rem; */
+    margin: .5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px rgba(0,0,0,1);
+}
+#logoText h1{
+    font-size: medium;
+    display: inline;
+    color: var(--background);
+}
+#logoText p{
+    padding: 0;
+    font-size: small;
+    color: var(--background);
+}
+#hamburger button:nth-child(2){
+    display: none;
+}
+#hamburger button{
+    border: none;
+    background-color: transparent;
+    font-size: x-large;
+    color: var(--background);
+}
+#externalLinks img{
+    width: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 2px rgba(0,0,0,1);
+}
+#home_1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.mainNavigation{
+    display: none;
+}
+.mainNavigation li a{
+    display: block;
+    background-color: var(--background);
+    color: var(--headers);
+    text-align: center;
+}
+header{
+    background-color: var(--headers);
+}
+#today{
+    font-size: small;
+    display: block;
+    text-align: center;
+    color: var(--background);
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0rem .5rem;
+}
