@@ -22,5 +22,5 @@ lesson_4.textContent = "Chambers Home page";
 lesson_4.href = "lesson_4/index.html";
 
 const lesson_5 = document.querySelector(".lesson_5");
-lesson_5.href = "lesspn_5/bom.html";
+lesson_5.href = "lesson_5/bom.html";
 lesson_5.textContent = "Book of Mormon Game";
