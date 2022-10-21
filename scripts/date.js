@@ -24,3 +24,7 @@ lesson_4.href = "lesson_4/index.html";
 const lesson_5 = document.querySelector(".lesson_5");
 lesson_5.href = "lesson_5/bom.html";
 lesson_5.textContent = "Book of Mormon Game";
+
+const lesson_6 = document.querySelector(".lesson_6");
+lesson_6.href = "lesson_6/index.html";
+lesson_6.textContent = "Updated site";
