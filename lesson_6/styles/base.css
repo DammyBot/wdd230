@@ -149,6 +149,22 @@ nav ul#mainNavigation.open{
     /* border: 1px solid red; */
 }
 
+#temperature, #windSpeed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+#temperature #value1{
+    font-size: x-large;
+    /* margin: 0 0 0 1rem; */
+}
+
+#windSpeed p{
+    font-size: x-large;
+    /* margin: 0 1rem 0 0; */
+}
+
 .one{
     margin: 1rem;
     /* border: 1px solid black; */

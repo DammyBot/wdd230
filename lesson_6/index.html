@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ibadan chamber of commerce home page">
+    <title>Ibadan Chamber of Commerce</title>
+    <link rel="icon" href="../images/favicon.ico">
+    <!-- <link rel="icon" href="../images/favicon.ico"> -->
+
+    <!-- CSS -->
+    <!-- Normalize -->
+    <link href="../styles/normalize.css" rel="stylesheet">
+    <!-- Small screen View -->
+    <link href="styles/base.css" rel="stylesheet">
+    <!-- Medium sreen view -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- Large screen view -->
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <img id="mainLogo" src="images/tempsnip.png" alt="Logo">
+            <div id="mainText">
+                <dl>
+                    <dt>Ibadan</dt>
+                    <dd>Chamber of Commerce</dd>
+                </dl>
+            </div>
+            <a href="https://facebook.com" target="_blank"><img class="logos"
+                    src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://instagram.com" target="_blank"><img class="logos"
+                    src="images/instagram.png" alt="Instagram"></a>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>❌</span></button>
+        </div>
+        <nav>
+            <ul id="mainNavigation">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <span id="current_date"></span>
+    <main class="mainBody">
+        <div class="one">
+            <!-- <p>Hero with site name and call to action</p> -->
+            <!-- <img src="../chamber/images/ibadan.jpg" alt="Home Image"> -->
+            <picture class="mainImage">
+                <source media="(max-width: 200px)" srcset="../lesson_6/images/wdd230-org-assets/hero/optimizedHero200px.png">
+                <source media="(max-width: 500px)" srcset="../lesson_6/images/wdd230-org-assets/hero/optimizedHero500px.png">
+                <source media="(max-width: 800px)" srcset="../lesson_6/images/wdd230-org-assets/hero/optimizedHero800px.png">
+                <source media="(max-width: 1500px)" srcset="../lesson_6/images/wdd230-org-assets/hero/optimizedHero1100px.png">
+                <img src="../lesson_6/images/wdd230-org-assets/hero/optimizedHero.png" alt="Hero">
+            </picture>
+            <h2>Welcome to Ibadan</h2>
+            <p>Join the Chamber</p>
+        </div>
+        <div class="six">
+            <h2>Join us</h2>
+            <p>Discover How to join the chamber of commerce and how it will benefit you</p>
+        </div>
+        <div class="two">
+            <h2>Ribbon Cutting</h2>
+            <h3>💎 The Diamond Shack</h3>
+            <p>Join us for the grand opening of the Daimond Shack, Thursday at 1:00pm. <a href="#">more info...</a></p>
+        </div>
+        <div class="three">
+            <h2>Weather</h2>
+            <div class="content1">
+                <img src="../chamber/images/cloudy.png" alt="Weather Image">
+                <!-- <p>33&#176;</p> -->
+                <span id="temperature"><span id="value1">10</span><span>&#8451;</span></span>
+            </div>
+            <p><b>Partially Cloudy</b></p>
+            <hr>
+            <div class="content2">
+                <p><b>Wind Speed:</b></p>
+                <!-- <p><b>2.5km/h</b></p> -->
+                <span id="windSpeed"><span id="value2">2.5</span><span>km/h</span></span>
+            </div>
+            <div class="content2">
+                <p><b>Wind Chill:</b></p>
+                <!-- <p><b>N/A</b></p> -->
+                <span id="windChill"></span>
+            </div>
+        </div>
+        <div class="four">
+            <h2>News Releases</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum magnam cumque laudantium dicta, ut dolorum in autem quaerat repellat rem deleniti vero illum earum voluptate sapiente sequi nisi, corporis ab, cum fugit sint eos vitae aperiam. Hic tenetur delectus numquam assumenda, repudiandae optio consequatur error illo magni distinctio provident dicta.</p>
+        </div>
+        <div class="five">
+            <div class="spotlight1">
+                <h2>Thankful Transport</h2>
+                <img src="../chamber/images/cargo-truck.png" alt="Truck Image">
+                <p>"We get it there for you!"</p>
+                <hr>
+                <p>hello@thankfultransport.com</p>
+                <p>+999-9999-999 | Webbsite</p>
+            </div>
+            <div class="spotlight2">
+                <h2>Code Primera</h2>
+                <img src="../chamber/images/edit.png" alt="Pencil Image">
+                <p>An after school coding instructional Program.</p>
+                <hr>
+                <p>contact@codeprimera.com</p>
+                <p>+999-9999-9999 | Website</p>
+            </div>
+            <div class="spotlight3">
+                <h2>Build a Treefort</h2>
+                <img src="../chamber/images/forest.png" alt="Tree Image">
+                <p>Over 1000 plans!</p>
+                <hr>
+                <p>build@treefort.com</p>
+                <p>+999-9999-9999 | Website</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img class="mainLogo" src="images/tempsnip.png" alt="Logo">
+        <div>
+            <dl>
+                <dt class="subOne">Ibadan Chamber of Commerce</dt>
+                <dd class="subTwo">Ologuneru, Ibadan</dd>
+            </dl>
+        </div>
+        <div class="fooer">
+            <p>oluwadamilareobalana@gmail.com</p>
+            <p>+(234)8033684774</p>
+            <p>🍭 Location Map</p>
+        </div>
+        <hr>
+        <div class="fooerOne">
+            <p>&copy;<span id="currentYear"></span> Ibadan Chamber</p>
+            <P><b>Oluwadamilare Obalana</b></P>
+            <p>WDD 230 Project</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <!-- Attaching the Javascript -->
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
