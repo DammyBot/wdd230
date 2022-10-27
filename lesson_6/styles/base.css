@@ -80,6 +80,20 @@ div#header{
     padding: .2rem;
 }
 
+.two a:link{
+    color: black;
+}
+.two a:visited{
+    color: white;
+}
+.two a:hover{
+    color: green;
+}
+.two a:active{
+    color: red;
+}
+
+
 #current_date{
     background-color: var(--background);
     padding: .5rem;

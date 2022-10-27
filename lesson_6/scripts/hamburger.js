@@ -17,3 +17,6 @@ x.onclick = toggleMenu
 
 const current_year = document.getElementById("currentYear");
 current_year.textContent = new Date().getFullYear();
+
+const toay = Date();
+console.log(toay)
