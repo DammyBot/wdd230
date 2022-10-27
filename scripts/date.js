@@ -28,3 +28,7 @@ lesson_5.textContent = "Book of Mormon Game";
 const lesson_6 = document.querySelector(".lesson_6");
 lesson_6.href = "lesson_6/index.html";
 lesson_6.textContent = "Updated site";
+
+const lesson_7 = document.querySelector(".lesson_7");
+lesson_7.textContent = "Progressive Image Loading";
+lesson_7.href = "lesson_7/lazy_load.html";
