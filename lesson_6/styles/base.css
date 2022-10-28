@@ -93,6 +93,14 @@ div#header{
     color: red;
 }
 
+#todayDate.on{
+    padding: .5rem;
+    margin: .4rem .5rem;
+    display: block;
+    text-align: center;
+    background-color: var(--background);
+    box-shadow: 0 0 3px rgba(0,0,0,1);
+}
 
 #current_date{
     background-color: var(--background);

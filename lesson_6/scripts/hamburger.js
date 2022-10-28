@@ -18,5 +18,17 @@ x.onclick = toggleMenu
 const current_year = document.getElementById("currentYear");
 current_year.textContent = new Date().getFullYear();
 
-const toay = Date();
-console.log(toay)
+const todaysDate = new Date();
+const day = todaysDate.getDay();
+const today1 = document.getElementById("todayDate");
+// let day = 1;
+
+if (day = "1"){
+    today1.classList.toggle("on");
+    today1.textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+}else if (day = "2"){
+    today1.classList.toggle("on")
+    today1.textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+} else{
+    today1.textContent = "";
+}
