@@ -1,10 +1,10 @@
 const imageData = document.querySelectorAll("img[data-src]");
 
-function conversion(image) {
-    image.setAttribute("src", image.getAttribute("data-src"));
+const conversion = (image) => {
+    image.setAttribute("src",image.getAttribute("data-src"));
     image.onload = () => {
         image.removeAttribute("data-src");
-    };
+    }
 }
 
 if ("IntersectionObserver" in window){
