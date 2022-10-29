@@ -19,7 +19,7 @@ const current_year = document.getElementById("currentYear");
 current_year.textContent = new Date().getFullYear();
 
 const todaysDate = new Date();
-const day = todaysDate.getDay();
+let day = todaysDate.getDay();
 const today1 = document.getElementById("todayDate");
 // let day = 1;
 
