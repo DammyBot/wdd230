@@ -233,12 +233,12 @@
         box-shadow: 0 0 5px rgba(0, 0, 0, 1);
     }
 
-    .one1 figcaption,
-    .two1 figcaption,
-    .three1 figcaption,
-    .four1 figcaption,
-    .five1 figcaption,
-    .six1 figcaption {
+    .one1 p,
+    .two1 p,
+    .three1 p,
+    .four1 p,
+    .five1 p,
+    .six1 p{
         font-size: x-large;
     }
 

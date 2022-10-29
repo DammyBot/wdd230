@@ -423,6 +423,9 @@ img.mainLogo{
 hr{
     display: block;
 }
+#todayDate{
+    font-size: small;
+}
 
 /* Page 2 */
 .bodyBody{
@@ -479,12 +482,12 @@ hr{
 .six1:hover{
     display: block;
 }
-.one1 figcaption,
-.two1 figcaption,
-.three1 figcaption,
-.four1 figcaption,
-.five1 figcaption,
-.six1 figcaption{
+.one1 p,
+.two1 p,
+.three1 p,
+.four1 p,
+.five1 p,
+.six1 p{
     text-align: center;
     font-size: larger;
     background-color: var(--main);
