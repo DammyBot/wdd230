@@ -32,3 +32,7 @@ lesson_6.textContent = "Updated site";
 const lesson_7 = document.querySelector(".lesson_7");
 lesson_7.textContent = "Progressive Image Loading";
 lesson_7.href = "lesson_7/lazy_load.html";
+
+const lesson7_2 = document.querySelector(".lesson_7_2");
+lesson7_2.textContent = "Discover Page";
+lesson7_2.href = "lesson_7_2/index.html";
