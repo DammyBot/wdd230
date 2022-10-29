@@ -170,6 +170,10 @@
         grid-template-rows: 1fr auto;
     }
 
+    .main p{
+        font-size: x-large;
+    }
+
     .six1 {
         display: block;
     }
