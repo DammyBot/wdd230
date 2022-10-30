@@ -176,6 +176,30 @@
     .six1{
         background-color: var(--main);
     }
+    .two1 figure img,
+    .six1 figure img{
+        margin: .5rem 1rem .5rem .5rem;
+        width: 30%;
+    }
+    .four1 figure img{
+        margin: .5rem 1rem .5rem .5rem;
+        width: 27%;
+    }
+    .one1 figure img,
+    .three1 figure img,
+    .five1 figure img{
+        margin: .5rem .5rem .5rem 1rem;
+        width: 30%;
+    }
+    .one1 p,
+    .two1 p,
+    .three1 p,
+    .four1 p,
+    .five1 p,
+    .six1 p{
+        padding: 1rem;
+        margin: .5rem;
+    }
     .six1{
         padding: 0;
         margin: 1rem 1.5rem;
@@ -186,8 +210,8 @@
         grid-row: 8/9;
     }
     .six1 figure img#imageSix{
-        width: 40%;
-        margin: .5rem;
+        width: 25%;
+        margin: .5rem 1rem .5rem .5rem;
         float: right;
     }
     .main p{
