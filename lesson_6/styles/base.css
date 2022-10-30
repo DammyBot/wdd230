@@ -451,19 +451,12 @@ hr{
 .two1,
 .three1,
 .four1,
-.five1,
-.six1{
+.five1{
     padding: 0;
     margin: 1rem;
     box-shadow: 0 0 5px rgba(0,0,0,1);
-}
-.one1 figure,
-.two1 figure,
-.three1 figure,
-.four1 figure,
-.five1 figure,
-.six1 figure{
-    background-color: var(--main);
+    display: grid;
+    /* grid-template-rows: 1fr 1fr; */
 }
 .one1 figure img,
 .two1 figure img,
@@ -480,7 +473,7 @@ hr{
 .four1:hover,
 .five1:hover,
 .six1:hover{
-    display: block;
+    display: grid;
 }
 .one1 p,
 .two1 p,
