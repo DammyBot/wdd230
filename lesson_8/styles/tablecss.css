@@ -1,8 +1,11 @@
 *{
-    /* max-width: 1200px; */
-    /* margin: 0 auto; */
+    max-width: 700px;
+    margin: 0 auto;
     font-size: 12px;
     font-family: sans-serif;
+}
+div{
+    margin: 1rem;
 }
 :root{
     --background: #34e4ea;
@@ -11,7 +14,7 @@
 table{
     width: 100%;
     border-collapse: collapse;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 5px black;
 }
 table tr th{
     border: 1px solid black;
@@ -31,7 +34,7 @@ caption{
     font-weight: bold;
     background-color: var(--color);
     color: var(--background);
-    box-shadow: 0 0 15px black;
+    box-shadow: 0 0 5px black;
 }
 tr:nth-child(even) td{
     background-color: rgba(0,0,0,.1);
@@ -45,6 +48,7 @@ tr:nth-child(3) td:nth-child(2){
 p{
     text-align: center;
     padding: .5rem;
+    margin: 1rem;
     font-weight: bold;
     color: var(--color);
 }
