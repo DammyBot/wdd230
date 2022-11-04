@@ -36,3 +36,7 @@ lesson_7.href = "lesson_7/lazy_load.html";
 const lesson7_2 = document.querySelector(".lesson_7_2");
 lesson7_2.textContent = "Discover Page";
 lesson7_2.href = "lesson_7_2/index.html";
+
+const lesson_8 = document.querySelector(".lesson_8")
+lesson_8.textContent = "Table Practice"
+lesson_8.href = "lesson_8/table_build.html"
