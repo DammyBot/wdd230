@@ -42,5 +42,5 @@ lesson_8.textContent = "Table Practice"
 lesson_8.href = "lesson_8/table_build.html"
 
 const lesson_8_2 = document.querySelector(".lesson_8_2")
-lesson_8.textContent = "Join Form Page"
-lesson_8.href = "lesson_8/join_page/join.html"
+lesson_8_2.textContent = "Join Form Page"
+lesson_8_2.href = "lesson_8/join_page/join.html"
