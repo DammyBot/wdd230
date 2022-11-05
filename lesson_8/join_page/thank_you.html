@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ibadan chamber of commerce home page">
+    <title>Ibadan Chamber of Commerce</title>
+    <link rel="icon" href="../images/favicon.ico">
+    <!-- <link rel="icon" href="../images/favicon.ico"> -->
+
+    <!-- CSS -->
+    <!-- Normalize -->
+    <link href="../../styles/normalize.css" rel="stylesheet">
+    <!-- Small screen View -->
+    <link href="../../lesson_6/styles/base.css" rel="stylesheet">
+    <!-- Medium sreen view -->
+    <link href="../../lesson_6/styles/medium.css" rel="stylesheet">
+    <!-- Large screen view -->
+    <link href="../../lesson_6/styles/large.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <img id="mainLogo" src="../../lesson_6/images/tempsnip.webp" alt="Logo">
+            <div id="mainText">
+                <dl>
+                    <dt>Ibadan</dt>
+                    <dd>Chamber of Commerce</dd>
+                </dl>
+            </div>
+            <a href="https://facebook.com" target="_blank"><img class="logos"
+                    src="../../lesson_6/images/facebook.png" alt="Facebook"></a>
+            <a href="https://instagram.com" target="_blank"><img class="logos"
+                    src="../../lesson_6/images/instagram.png" alt="Instagram"></a>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>❌</span></button>
+        </div>
+        <nav>
+            <ul id="mainNavigation">
+                <li><a href="../../lesson_6/index.html">Home</a></li>
+                <li><a href="../../lesson_7_2/index.html">Directory</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a class="active" href="#">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="home">
+        <h1>Welcome to Ibadan Chamber of Commerce</h1>
+        <p>Hi there! <span id="userName"></span></p>
+        <p>Welcome to the Ibadan Chamber of Commerce Family!</p>
+        <p>I am glad that you are reading this email. I will be happy to help you grow your business.</p>
+    </main>
+    <footer>
+        <img class="mainLogo" src="../../lesson_6/images/tempsnip.webp" alt="Logo">
+        <div>
+            <dl>
+                <dt class="subOne">Ibadan Chamber of Commerce</dt>
+                <dd class="subTwo">Ologuneru, Ibadan</dd>
+            </dl>
+        </div>
+        <div class="fooer">
+            <p>oluwadamilareobalana@gmail.com</p>
+            <p>+(234)8033684774</p>
+            <p>🍭 Location Map</p>
+        </div>
+        <hr>
+        <div class="fooerOne">
+            <p>&copy;<span id="currentYear"></span> Ibadan Chamber</p>
+            <P><b>Oluwadamilare Obalana</b></P>
+            <p>WDD 230 Project</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <!-- Attaching the Javascript -->
+    <!-- <script src="../../lesson_6/scripts/hamburger.js"></script> -->
+    <script src="scripts/storage.js"></script>
+    <!-- <script src="scripts/new.js"></script> -->
+</body>
+
+</html>

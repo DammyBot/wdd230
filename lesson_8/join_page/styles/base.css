@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dongle:wght@300;400&display=swap');
+
+/* font-family: 'Bree Serif', serif; */
+/* font-family: 'Dongle', sans-serif; */
+
+:root{
+    --headers: #012A4A;
+    --background: #A9D6E5;
+    --main: #2C7DA0;
+}
+
+html{
+    background-color: var(--background);
+}
+
+main{
+    margin: 1rem .5rem;
+    /* padding: 1rem .5rem; */
+    padding: 2rem .1rem;
+}
+
+h1{
+    font-size: medium;
+    font-weight: bolder;
+    color: var(--headers);
+    text-align: center;
+}
+
+.home p{
+    font-size: small;
+    color: var(--headers);
+    font-family: 'Dongle', sans-serif;
+    font-size: large;
+    font-weight: normal;
+    color: black;
+}
+
+/* Top Display */
+form label.top{
+    display: block;
+    font-size: x-large;
+    padding: .5rem 0rem;
+    margin: 0;
+    color: #000000;
+    /* font-family: 'Bree Serif', serif; */
+    font-family: 'Dongle', sans-serif;
+}
+form label.top input, form label.top textarea{
+    display: block;
+    padding: 1rem .2rem;
+    width: 96%;
+    max-width: 20rem;
+    border-radius: 4px;
+}
+legend{
+    font-size: 1rem;
+    font-family: 'Bree Serif', serif;
+    color: var(--headers);
+    padding: 0rem .5rem;
+    margin: 0rem 1rem;
+    /* font-family: 'Dongle', sans-serif; */
+}
+fieldset{
+    border-radius: .4rem;
+    border: 1px solid grey;
+}
+form label.sbs{
+    display: block;
+    padding: .2rem;
+    color: var(--headers);
+    /* font-family: 'Bree Serif', serif; */
+    font-size: x-large;
+    /* padding: .5rem 0rem; */
+    /* margin: 0; */
+    color: #000000;
+    font-family: 'Dongle', sans-serif;
+}
+.submitBtn{
+    padding: 1rem .75rem;
+    border: none;
+    background-color: var(--main);
+    color: white;
+    margin: 2rem 1rem;
+    width: 96%;
+    max-width: 20rem;
+    border-radius: 10px;
+}
+label input:required{
+    border-left: 6px solid var(--headers);
+}
+label input:required:valid{
+    border-left: 6px solid var(--main);
+}
+
+h1{
+    font-family: 'Bree Serif', serif;
+    font-size: large;
+    /* font-family: 'Dongle', sans-serif; */
+}
