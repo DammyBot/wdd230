@@ -1,0 +1,9 @@
+@media only screen and (min-width: 50rem){
+    #cards{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .body{
+        box-shadow: 0 0 5px black;
+    }
+}

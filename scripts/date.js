@@ -44,3 +44,7 @@ lesson_8.href = "lesson_8/table_build.html"
 const lesson_8_2 = document.querySelector(".lesson_8_2")
 lesson_8_2.textContent = "Join Form Page"
 lesson_8_2.href = "lesson_8/join_page/join.html"
+
+const lesson_9 = document.querySelector(".lesson_9")
+lesson_9.textContent = "API practice"
+lesson_9.href = "lesson_9/prophets.html"
