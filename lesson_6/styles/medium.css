@@ -316,4 +316,26 @@
         transform: scale(1.02);
         /* box-shadow: 0 0 20px black; */
     }
+
+    #buttons{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    #buttons #grid, #buttons #list{
+        padding: .5rem;
+    }
+
+    .sectionMain img{
+        width: 30%;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    }
+
+    .list{
+        display: block;
+    }
 }

@@ -521,3 +521,59 @@ hr{
     filter: blur(4px);
     /* transition: .5s; */
 }
+
+article .body{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); */
+}
+article h2{
+    font-family: 'Bree Serif', serif;
+    padding: .2rem;
+    margin: .5rem .5rem;
+    text-shadow: 3px 3px 10px black;
+    text-align: center;
+    /* font-family: 'Dongle', sans-serif; */
+}
+.sectionMain{
+    box-shadow: 5px 5px 10px black;
+    padding: .5rem;
+    margin: 1rem;
+    transform: translateX(10px);
+    opacity: 0;
+    filter: blur(2);
+    transition: 1000ms;
+}
+#buttons{
+    display: none;
+}
+.active{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+}
+.sectionMain a{
+    text-decoration: none;
+    font-family: 'Dongle', sans-serif;
+    font-size: larger;
+    /* color: var(--main); */
+    /* transition: 500ms; */
+}
+.sectionMain a:link{
+    color: var(--main);
+}
+.sectionMain a:visited{
+    color: green;
+}
+.sectionMain a:hover{
+    color: rebeccapurple;
+}
+.sectionMain a:active{
+    color: red;   
+}
+.sectionMain img{
+    display: block;
+    width: 70%;
+    /* height: 50%; */
+    margin: 0 auto;
+    /* padding: 1rem; */
+}

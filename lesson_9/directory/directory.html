@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ibadan chamber of commerce home page">
+    <title>Ibadan Chamber of Commerce</title>
+    <link rel="icon" href="../images/favicon.ico">
+    <!-- <link rel="icon" href="../images/favicon.ico"> -->
+
+    <!-- CSS -->
+    <!-- Normalize -->
+    <link href="../styles/normalize.css" rel="stylesheet">
+    <!-- Small screen View -->
+    <link href="../../lesson_6/styles/base.css" rel="stylesheet">
+    <!-- Medium sreen view -->
+    <link href="../../lesson_6/styles/medium.css" rel="stylesheet">
+    <!-- Large screen view -->
+    <link href="../../lesson_6/styles/large.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <img id="mainLogo" src="../../lesson_6/images/tempsnip.webp" alt="Logo">
+            <div id="mainText">
+                <dl>
+                    <dt>Ibadan</dt>
+                    <dd>Chamber of Commerce</dd>
+                </dl>
+            </div>
+            <a href="https://facebook.com" target="_blank"><img class="logos"
+                    src="../../lesson_6/images/facebook.png" alt="Facebook"></a>
+            <a href="https://instagram.com" target="_blank"><img class="logos"
+                    src="../../lesson_6/images/instagram.png" alt="Instagram"></a>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>❌</span></button>
+        </div>
+        <nav>
+            <ul id="mainNavigation">
+                <li><a href="../../lesson_6/index.html">Home</a></li>
+                <li><a href="../../lesson_7_2/index.html">Directory</a></li>
+                <li><a class="active" href="directory.html">Discover</a></li>
+                <li><a href="../../lesson_8/join_page/join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <span id="current_date"></span>
+    <span id="todayDate"></span>
+    <main>
+        <article>
+            <h2>Business Directory</h2>
+            <div id="buttons">
+                <input type="button" id="grid" value="Grid">
+                <input type="button" id="list" value="List">
+            </div>
+            <div class="body grid">
+                <section class="sectionMain">
+                    <img src="images/botw.jpg" alt="Best of the Web" loading="lazy">
+                    <h3>Best of the Web</h3>
+                    <a href="https://botw.org/" target="_blank">BOTW</a>
+                </section>
+                <section class="sectionMain">
+                    <img src="images/aboutUs.webp" alt="About Us" loading="lazy">
+                    <h3>About Us</h3>
+                    <a href="https://aboutus.com/" target="_blank">About Us</a>
+                </section>
+                <section class="sectionMain">
+                    <img src="images/spoke.jpg" alt="Spoke" loading="lazy">
+                    <h3>Spoke</h3>
+                    <a href="http://www.spoke.com/" target="_blank">Spoke.com</a>
+                </section>
+                <section class="sectionMain">
+                    <img src="images/googleBusinessProfile.jpg" alt="Google Buiness Profile" loading="lazy">
+                    <h3>Google Business Profile</h3>
+                    <a href="https://www.google.com/business/" target="_blank">Goggle Business Profile</a>
+                </section>
+                <section class="sectionMain">
+                    <img src="images/bingPlaces.png" alt="Bing Places" loading="lazy">
+                    <h3>Bing Places</h3>
+                    <a href="https://www.bingplaces.com/" target="_blank">Bing Places</a>
+                </section>
+                <section class="sectionMain">
+                    <img src="images/yelp.png" alt="Yelp" loading="lazy">
+                    <h3>Yelp</h3>
+                    <a href="https://biz.yelp.com/" target="_blank">BOTW</a>
+                </section>
+                <section class="sectionMain">
+                    <img src="images/Foursquare.png" alt="ForeSquare" loading="lazy">
+                    <h3>Four square</h3>
+                    <a href="http://business.foursquare.com/" target="_blank">ForeSquare</a>
+                </section>
+                <section class="sectionMain">
+                    <img src="images/yellowPages.png" alt="Yellow Pages" loading="lazy">
+                    <h3>Yellow Pages</h3>
+                    <a href="https://www.yellowpages.com/" target="_blank">Yello Pages</a>
+                </section>
+                <section class="sectionMain">
+                    <img src="images/chamberOfCommerce.png" alt="Chamber of Commerce" loading="lazy">
+                    <h3>Chamber of Commerce</h3>
+                    <a href="https://www.chamberofcommerce.com/" target="_blank">Chamber of Commerce</a>
+                </section>
+                <section class="sectionMain">
+                    <img src="images/hotFrog.jpg" alt="Hot Frog" loading="lazy">
+                    <h3>Hot Frog</h3>
+                    <a href="https://www.hotfrog.com/" target="_blank">Hot Frog</a>
+                </section>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <img class="mainLogo" src="../../lesson_6/images/tempsnip.webp" alt="Logo">
+        <div>
+            <dl>
+                <dt class="subOne">Ibadan Chamber of Commerce</dt>
+                <dd class="subTwo">Ologuneru, Ibadan</dd>
+            </dl>
+        </div>
+        <div class="fooer">
+            <p>oluwadamilareobalana@gmail.com</p>
+            <p>+(234)8033684774</p>
+            <p>🍭 Location Map</p>
+        </div>
+        <hr>
+        <div class="fooerOne">
+            <p>&copy;<span id="currentYear"></span> Ibadan Chamber</p>
+            <P><b>Oluwadamilare Obalana</b></P>
+            <p>WDD 230 Project</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <!-- Attaching the Javascript -->
+    <script src="../../lesson_6/scripts/hamburger.js"></script>
+    <!-- <script src="scripts/windchill.js"></script> -->
+    <script src="script/transform.js" defer></script>
+</body>
+
+</html>
