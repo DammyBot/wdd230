@@ -52,3 +52,7 @@ lesson_9.href = "lesson_9/prophets.html"
 const lesson_9_2 = document.querySelector(".lesson_9_2")
 lesson_9_2.textContent = "Discover Page"
 lesson_9_2.href = "lesson_9/directory/directory.html"
+
+const lesson_10 = document.querySelector(".lesson_10")
+lesson_9_2.textContent = "Weather API"
+lesson_9_2.href = "lesson_10/weather-api.html"
