@@ -15,7 +15,7 @@ async function conversion(url){
         const converted = await data.json();
         details = converted
         // console.log(details);
-        console.log(details.current.weather[0]);
+        // console.log(details.current.weather[0]);
         displayResults(details.current);
     }
 }
