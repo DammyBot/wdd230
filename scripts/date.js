@@ -54,5 +54,9 @@ lesson_9_2.textContent = "Discover Page"
 lesson_9_2.href = "lesson_9/directory/directory.html"
 
 const lesson_10 = document.querySelector(".lesson_10")
-lesson_9_2.textContent = "Weather API"
-lesson_9_2.href = "lesson_10/weather-api.html"
+lesson_10.textContent = "Weather API"
+lesson_10.href = "lesson_10/weather-api.html"
+
+const lesson_10_2 = document.querySelector(".lesson_10_2")
+lesson_10_2.textContent = "Site with weather API"
+lesson_10_2.href = "lesson_6/index.html"
