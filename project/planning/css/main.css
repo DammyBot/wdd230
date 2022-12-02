@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:wght@100&family=Zen+Dots&display=swap');
+
+:root{
+    --black: #000000;
+    --deep-blue: #14213D;
+    --orange: #FCA311;
+    --almost-white: #E5E5E5;
+    --white: #FFFFFF;
+    --nerko-one: 'Nerko One', cursive;
+    --roboto: 'Roboto', sans-serif;
+    --zen-dots: 'Zen Dots', cursive;
+}
+*{
+    line-height: 2;
+}
+a{
+    display: block;
+}
+main{
+    max-width: 900px;
+    margin: auto;
+}
+
+.intro{
+    background-color: var(--deep-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin: 3rem 0;
+    box-shadow: 0 0 10px black;
+}
+.intro h1{
+    font-family: var(--nerko-one);
+    font-size: 3rem;
+    text-shadow: 0 0 40px black;
+}
+.intro h3{
+    font-family: var(--roboto);
+    font-size: 1.5rem;
+    text-shadow: 0 0 30px black;
+}
+hr{
+    border: 1px solid var(--orange);
+}
+
+.overview,
+.branding,
+.style,
+.wireframe{
+    text-align: center;
+}
+.overview h2,
+.branding h2,
+.style h2,
+.wireframe h2{
+    font-family: var(--nerko-one);
+    color: var(--deep-blue);
+    font-size: 2.7rem;
+    /* text-shadow: 0 0 35px black; */
+}
+.overview h3,
+.branding h3,
+.style h3,
+.wireframe h3{
+    font-family: var(--nerko-one);
+    color: var(--deep-blue);
+    font-size: 1.6rem;
+}
+.style p{
+    font-family: var(--roboto);
+    font-weight: bold;
+    text-shadow: 0 0 .5px black;
+}
+.style a{
+    color: var(--orange);
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 500ms ease;
+}
+.style a:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+.overview p{
+    font-family: var(--roboto);
+    background-color: var(--black);
+    color: white;
+    padding: 2rem;
+    /* font-size: 1.1rem; */
+    font-weight: bold;
+}
+.normal{
+    transform: translateX(-24%);
+    opacity: 0;
+    transition: 500ms ease;
+}
+.background,
+.full-background{
+    box-shadow: 0 0 0 100vmax var(--black);
+    clip-path: inset(0 -100vmax);
+    transform: translateX(24%);
+    opacity: 0;
+    transition: 500ms ease;
+}
+.open{
+    transform: translateX(0);
+    opacity: 1;
+}
+.branding img{
+    width: 40%;
+}
+.style table{
+    margin: auto;
+    padding: 2rem 0;
+    /* gap: 0; */
+}
+/* th{
+    color: var(--almost-white);
+    background-color: var(--deep-blue);
+    margin: 0;
+} */
+
+.style .colored{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 3rem;
+}
+.full-background{
+    box-shadow: 0 0 0 100vmax var(--black);
+    clip-path: inset(0 -100vmax);
+}
