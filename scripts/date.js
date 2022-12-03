@@ -60,3 +60,7 @@ lesson_10.href = "lesson_10/weather-api.html"
 const lesson_10_2 = document.querySelector(".lesson_10_2")
 lesson_10_2.textContent = "Site with weather API"
 lesson_10_2.href = "lesson_6/index.html"
+
+const lesson_11 = document.querySelector(".lesson_11");
+lesson_11.textContent = "Project Site Plan";
+lesson_11.href = "project/planning/site-plan.html"
