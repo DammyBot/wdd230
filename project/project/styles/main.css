@@ -46,7 +46,7 @@
 /* Hamburger Button */
 .hamburger{
     position: absolute;
-    top: 1.3rem;
+    top: 1.45rem;
     right: 2.5rem;
 }
 .button{
@@ -100,16 +100,19 @@
 /* Navigation */
 /* Logo */
 .logo{
-    padding: .2rem;
-    width: 4rem;
+    /* padding: .2rem; */
+    width: 14rem;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.logo .logo_link{
+    width: 100%;
+}
 .logo img{
     width: 100%;
-    padding: 0 .4rem;
+    /* padding: 0 .4rem; */
 }
 .logo p{
     text-transform: uppercase;
@@ -210,7 +213,7 @@
 }
 .scroll .nav .container li a{
     /* color: var(--primary); */
-    background-color: rgba(0,0,0,.3);
+    background-color: var(--Dark-grayish-blue);
     text-shadow: 0 0 0 var(--primary);
 }
 .scroll .nav .container li a.active{
@@ -250,7 +253,7 @@
     box-shadow: 1px 1px 5px var(--primary);
     text-align: center;
 
-    transition: 2000ms ease;
+    transition: 1000ms ease;
     transform: translateY(30%);
     opacity: 0;
 }
@@ -322,7 +325,7 @@
 
     transform: translateY(30%);
     opacity: 0;
-    transition: 1200ms ease 100ms;
+    transition: 800ms ease 100ms;
 }
 .third .drink:hover{
     background-color: var(--accent1);
@@ -341,7 +344,7 @@
     
     transform: translateY(20%);
     opacity: 0;
-    transition: 1200ms ease;
+    transition: 800ms ease;
 }
 .image.reposition{
     transform: translateY(0);
@@ -352,7 +355,7 @@
 .heading{
     transform: translateY(50%);
     opacity: 0;
-    transition: 1200ms ease;
+    transition: 800ms ease;
 }
 .heading.reposition{
     transform: translateY(0);
@@ -361,7 +364,7 @@
 .para{
     transform: translateY(10%);
     opacity: 0;
-    transition: 1200ms ease 200ms;
+    transition: 800ms ease 100ms;
 }
 .para.reposition{
     transform: translateY(0);
