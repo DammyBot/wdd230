@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Fraunces:opsz,wght@9..144,100&family=Nerko+One&family=Roboto:wght@100&family=Zen+Dots&display=swap');
+
+/* Variables */
+:root{
+    /* Original Idea */
+    --primary: #000000;
+    --secondary: #14213D;
+    --accent1: #FCA311;
+    --accent2: #E5E5E5;
+    --accent3: #FFFFFF;
+    --radius: 15rem;
+    --nerko-one-font: 'Nerko One', cursive;
+    --roboto-font: 'Roboto', sans-serif;
+    --zen-dots-font: 'Zen Dots', cursive;
+    /* Primary */
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan-graphic-design-text: hsl(167, 40%, 24%);
+    --Dark-blue-photography-text: hsl(198, 62%, 26%);
+    --Dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+    /* Neutral */
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White-Neutral: hsl(0, 0%, 100%);
+    /* New Fonts */
+    --Barlow: 'Barlow', sans-serif;
+    --Fraunces: 'Fraunces', serif;
+    /* Font weights */
+    --Barlow-font-weight: 600;
+    --Fraunces-font-weight-one: 700;
+    --Fraunces-font-weight-two: 900;
+}
+
+/* Whole HTML */
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+
+/* Hamburger Button */
+.hamburger{
+    position: absolute;
+    top: 1.3rem;
+    right: 2.5rem;
+}
+.button{
+    width: 30px;
+    height: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: transparent;
+    border: none;
+
+    transition: 100ms ease;
+}
+
+/* Top, middle and buttom hamburger bars */
+.top,
+.middle,
+.buttom{
+    background-color: var(--accent3);
+    width: 100%;
+    height: 3px;
+    
+    border-radius: var(--radius);
+    box-shadow: 0 0 4px var(--primary);
+    transition: 500ms ease;
+}
+.button:hover .top,
+.button:hover .middle,
+.button:hover .buttom{
+    background-color: var(--accent1);
+}
+/* Animation for hamburger bars */
+.button.rotate .top{
+    transform: rotate(-45deg);
+    transform-origin: right;
+}
+.button.rotate .buttom{
+    transform: rotate(45deg);
+    transform-origin: right;
+}
+.button.rotate .middle{
+    transform: translateX(15px);
+    opacity: 0;
+}
+
+
+
+/* Navigation */
+/* Logo */
+.logo{
+    padding: .2rem;
+    width: 4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    width: 100%;
+    padding: 0 .4rem;
+}
+.logo p{
+    text-transform: uppercase;
+    padding: 0 .3rem;
+    color: var(--accent3);
+    text-shadow: 0 0 5px var(--primary);
+    font-family: var(--Fraunces);
+    font-weight: var(--Fraunces-font-weight-two);
+    cursor: default;
+}
+
+/* Navigation Container */
+.main-container ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    /* width: 100%; */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    padding: .75rem .75rem .45rem .75rem;
+
+    /* border-bottom: 1px solid var(--accent3); */
+    /* box-shadow: 0 0 3px var(--primary); */
+
+    transition: 450ms ease-in-out;
+}
+.main-container .nav .container{
+    /* display: none; */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1.5rem .5rem 0;
+    /* background-color: rgb(0, 74, 170, .1); */
+
+    width: 104%;
+    position: absolute;
+    left: -200%;
+    transition: 500ms ease;
+}
+.main-container .nav .container.open{
+    /* display: flex; */
+    left: 0;
+}
+.main-container .nav .container li{
+    /* width: 100%; */
+    text-align: center;
+}
+
+/* Navigation Links */
+.main-container .nav .container li a.active{
+    background-color: var(--secondary);
+    color: var(--accent3);
+    box-shadow: 0 0 5px var(--primary);
+}
+.main-container .nav .container li a{
+    color: var(--accent3);
+    background-color: rgba(0,0,0,.7);
+    /* box-shadow: 0 0 5px var(--primary); */
+    text-decoration: none;
+    text-shadow: 0 0 1px var(--primary);
+    /* font-size: medium; */
+    font-family: var(--Fraunces);
+    font-weight: var(--Fraunces-font-weight-two);
+
+    display: block;
+    text-transform: uppercase;
+    
+    padding: 1rem .75rem;
+    margin: .4rem;
+    border-radius: var(--radius);
+
+    transition: 500ms ease 100ms;
+}
+.main-container .nav .container li a:hover{
+    box-shadow: 0 0 5px var(--primary);
+    background-color: var(--accent1);
+    color: var(--accent3);
+}
+
+/* Nav On Scroll */
+.scroll{
+    background-color: var(--secondary);
+}
+.scroll .nav .container{
+    background-color: var(--secondary);
+}
+.scroll .nav .container li a{
+    /* color: var(--primary); */
+    background-color: rgba(0,0,0,.3);
+    text-shadow: 0 0 0 var(--primary);
+}
+.scroll .nav .container li a.active{
+    background-color: var(--accent1);
+    color: var(--accent3);
+}
+.scroll .nav .container li a:hover{
+    background-color: var(--primary);
+    color: var(--accent3);
+}
+
+
+
+/* Body */
+/* First */
+.first{
+    position: relative;
+    /* height: 100%; */
+    line-height: 0px;
+    box-shadow: 0 0 10px var(--primary);
+}
+.first img{
+    width: 100%;
+    height: 100%;
+}
+.first .text{
+    position: absolute;
+    top: 35%;
+    /* left: 14vw; */
+
+    width: 100%;
+
+    background-color: var(--accent3);
+    padding: 3rem 0;
+    color: var(--secondary);
+    text-shadow: 0 0 1px var(--primary);
+    box-shadow: 1px 1px 5px var(--primary);
+    text-align: center;
+
+    transition: 2000ms ease;
+    transform: translateY(30%);
+    opacity: 0;
+}
+.first .text h1{
+    font-size: xx-large;
+    text-transform: uppercase;
+    /* text-align: center; */
+}
+.first .text.reposition{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Second */
+.second{
+    line-height: 0;
+    /* padding: .15rem; */
+    /* box-shadow: 0 0 10px var(--primary); */
+}
+.second img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px var(--primary);
+}
+
+/* Third */
+.third{
+    padding: 4rem .75rem;
+    width: 100%;
+    /* background-color: var(--accent1); */
+}
+.third .heading{
+    font-size: xx-large;
+    text-align: center;
+    line-height: 1.3;
+    font-family: var(--Barlow);
+    font-weight: var(--Barlow-font-weight);
+    font-style: italic;
+    /* text-transform: uppercase; */
+
+    padding: 1rem .25rem;
+}
+.third .para{
+    font-size: medium;
+    line-height: 2;
+    font-family: var(--Fraunces);
+    font-weight: var(--Fraunces-font-weight-two);
+    text-align: center;
+
+    padding: 1rem 0 .2rem 0;
+}
+.third .drink{
+    text-decoration: none;
+    color: var(--accent3);
+    background-color: var(--secondary);
+    
+    display: block;
+    text-align: center;
+    text-shadow: 0 0 2px var(--primary);
+    box-shadow: 0 0 5px var(--primary);
+    border-radius: var(--radius);
+    
+    font-size: large;
+    font-family: var(--Fraunces);
+    font-weight: var(--Fraunces-font-weight-two);
+
+    padding: 1.75rem 0;
+    margin-top: 2rem;
+
+    transform: translateY(30%);
+    opacity: 0;
+    transition: 1200ms ease 100ms;
+}
+.third .drink:hover{
+    background-color: var(--accent1);
+    color: var(--accent3);
+}
+
+
+
+/* Lazy Load Images */
+.image[data-src]{
+    filter: blur(10px);
+    transition: 500ms ease;
+}
+.image{
+    filter: blur(0);
+    
+    transform: translateY(20%);
+    opacity: 0;
+    transition: 1200ms ease;
+}
+.image.reposition{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Text Animation */
+.heading{
+    transform: translateY(50%);
+    opacity: 0;
+    transition: 1200ms ease;
+}
+.heading.reposition{
+    transform: translateY(0);
+    opacity: 1;
+}
+.para{
+    transform: translateY(10%);
+    opacity: 0;
+    transition: 1200ms ease 200ms;
+}
+.para.reposition{
+    transform: translateY(0);
+    opacity: 1;
+}
+.drink.reposition{
+    transform: translateY(0);
+    opacity: 1;
+}
