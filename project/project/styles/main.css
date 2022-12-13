@@ -285,7 +285,7 @@
 
 /* Third */
 .third{
-    padding: 4rem .75rem;
+    padding: 4rem .75rem 1rem .75rem;
     width: 100%;
     /* background-color: var(--accent1); */
 }
