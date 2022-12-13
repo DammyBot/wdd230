@@ -64,3 +64,7 @@ lesson_10_2.href = "lesson_6/index.html"
 const lesson_11 = document.querySelector(".lesson_11");
 lesson_11.textContent = "Project Site Plan";
 lesson_11.href = "project/planning/site-plan.html"
+
+const project = document.querySelector(".final_project");
+project.textContent = "Final Project";
+project.href = "project/project/index.html";
