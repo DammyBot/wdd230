@@ -38,7 +38,11 @@ const fresh = document.querySelector(".drink")
 textAnimation.observe(fresh);
 
 const weather_card = document.querySelector(".weather_card");
-textAnimation.observe(weather_card)
+textAnimation.observe(weather_card);
+
+const weather_table = document.querySelector(".weather_table");
+textAnimation.observe(weather_table);
+
 
 
 // Header Change on Scroll
@@ -115,6 +119,30 @@ function updateDetail(data){
     // 10d.png
     weather_card.setAttribute("src", url)
     weather_card.setAttribute("alt", content_description);
+
+    const temp_day_one = document.querySelector(".temperature_day_one");
+    const day_one_temp = data.daily[0].temp.max;
+    temp_day_one.textContent = day_one_temp;
+
+    const temp_day_two = document.querySelector(".temperature_day_two");
+    const day_two_temp = data.daily[1].temp.max;
+    temp_day_two.textContent = day_two_temp;
+
+    const temp_day_three = document.querySelector(".temperature_day_three");
+    const day_three_temp = data.daily[2].temp.max;
+    temp_day_three.textContent = day_three_temp;
+    
+    const condition_day_one = document.querySelector(".condition_day_one");
+    const day_one_condition = data.daily[0].weather[0].description;
+    condition_day_one.textContent = day_one_condition;
+
+    const condition_day_two = document.querySelector(".condition_day_two");
+    const day_two_condition = data.daily[1].weather[0].description;
+    condition_day_two.textContent = day_two_condition;
+
+    const condition_day_three = document.querySelector(".condition_day_three");
+    const day_three_condition = data.daily[2].weather[0].description;
+    condition_day_three.textContent = day_three_condition;
 };
 
 weatherDataFetch(weatherUrl);
