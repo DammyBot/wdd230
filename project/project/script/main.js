@@ -80,7 +80,19 @@ load(url);
 
 
 // Weather API
-const weatherUrl = "https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid=15b3c845efce804c56e0ccf9cfedc22f"
+const weatherUrl = "https://api.openweathermap.org/data/3.0/onecall?lat=33.158092&lon=-117.350594&exclude=minutely,hourly&units=metric&appid=15b3c845efce804c56e0ccf9cfedc22f"
+let weatherInformation = [];
+
+async function weatherDataFetch(url){
+    const data = await fetch(url);
+    if(data.ok){
+        const converted = await data.json();
+        weatherInformation = converted;
+        console.log(weatherInformation);
+    }
+}
+
+weatherDataFetch(weatherUrl);
 
 
 
