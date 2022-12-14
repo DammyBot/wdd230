@@ -15,6 +15,7 @@
         display: block;
         margin: 0 auto;
         width: 75%;
+        border-radius: 20px;
     }
 
     .four{
@@ -37,7 +38,7 @@
     
     
     /* Footer */
-    footer{
+    /* footer{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -80,5 +81,5 @@
         gap: 1rem;
         width: 45%;
         padding: 0 1rem;
-    }
+    } */
 }

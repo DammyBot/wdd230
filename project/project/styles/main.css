@@ -284,7 +284,7 @@
 /* Second */
 .second{
     line-height: 0;
-    /* padding: .15rem; */
+    padding: 1rem 0;
     /* box-shadow: 0 0 10px var(--primary); */
 }
 .second img{
