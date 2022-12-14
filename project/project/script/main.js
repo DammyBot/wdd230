@@ -43,6 +43,15 @@ textAnimation.observe(weather_card);
 const weather_table = document.querySelector(".weather_table");
 textAnimation.observe(weather_table);
 
+const order = document.querySelector(".order");
+textAnimation.observe(order);
+
+const ohead = document.querySelector(".ohead");
+textAnimation.observe(ohead);
+
+const obody = document.querySelector(".obody");
+textAnimation.observe(obody);
+
 
 
 // Header Change on Scroll
@@ -172,3 +181,13 @@ const images = document.querySelectorAll(".image");
 images.forEach(image=>{
     imageObserver.observe(image);
 })
+
+
+
+// Display Order Details in Home Page
+const ordr_detail = document.querySelector(".order_detail");
+if(ordr_detail.textContent == "None"){
+    order.style.display = "none";
+}else{
+    order.style.display = "block"
+}

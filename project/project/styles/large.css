@@ -1,4 +1,15 @@
-@media(min-width: 54rem){
+@media(min-width: 53.25em){
+    /* Bountiful Foods Text */
+    .first .text{
+        top: 24%;
+        padding: 6rem 0;
+    }
+    .first .text h1{
+        font-size: 5rem;
+    }
+
+
+
     /* Hamburger Button */
     .button{
         display: none;
@@ -38,10 +49,35 @@
     }
 
 
-
     /* Body */
-    /* First */
-    .first .text{
-        top: 35%;
+    .one,
+    .five{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem .75rem;
+    }
+    .second img{
+        width: 80%;
+    }
+    .two{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding: 2rem .75rem;
+    }
+    .five .second img{
+        width: 100%;
+    }
+
+
+
+    /* Footer */
+    .footer_nav ul{
+        gap: 3.5rem;
+    }
+    .link_icons{
+        width: 25%;
     }
 }
