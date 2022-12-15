@@ -105,3 +105,12 @@ const images = document.querySelectorAll(".image");
 images.forEach(image=>{
     imageObserver.observe(image);
 })
+
+
+const year = document.querySelector("#year");
+const new_year = new Date().getFullYear();
+year.textContent = new_year;
+
+const last_modified = document.querySelector("#last_modified");
+const modified = document.lastModified;
+last_modified.textContent = modified;

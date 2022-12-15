@@ -73,29 +73,6 @@ headerObserver.observe(heroImg);
 
 
 
-// Load Data From API
-const url = "https://brotherblazzard.github.io/canvas-content/fruit.json";
-let information = [];
-let fruitName = [];
-let nutritions = []
-async function load(link){
-    const name1 = await fetch(url);
-    if(name1.ok){
-        const converted = await name1.json();
-        information = converted;
-
-        information.forEach(fruit=>{
-            fruitName = fruit.name;
-        })
-
-        information.forEach(info=>{
-            nutritions = info.nutritions;
-        })
-    }
-}
-load(url);
-
-
 // Weather API
 const weatherUrl = "https://api.openweathermap.org/data/3.0/onecall?lat=33.158092&lon=-117.350594&exclude=minutely,hourly&units=metric&appid=15b3c845efce804c56e0ccf9cfedc22f"
 let weatherInformation = [];
@@ -186,8 +163,19 @@ images.forEach(image=>{
 
 // Display Order Details in Home Page
 const ordr_detail = document.querySelector(".order_detail");
+const datam = localStorage.getItem("order_count");
+ordr_detail.textContent = datam;
 if(ordr_detail.textContent == "None"){
     order.style.display = "none";
 }else{
     order.style.display = "block"
 }
+
+
+const year = document.querySelector("#year");
+const new_year = new Date().getFullYear();
+year.textContent = new_year;
+
+const last_modified = document.querySelector("#last_modified");
+const modified = document.lastModified;
+last_modified.textContent = modified;
