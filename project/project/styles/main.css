@@ -751,11 +751,12 @@ legend{
 }
 .output{
     padding: 3rem .75rem 2rem .75rem;
-    margin: 1rem 0;
-    width: 100%;
+    margin: 1rem 1rem;
+    /* width: 100%; */
     border: 1px solid var(--primary);
     border-radius: 12px;
     /* background-color: var(--accent1); */
+    box-shadow: 0 0 5px var(--primary);
 
     transform: translateY(30%);
     opacity: 0;
