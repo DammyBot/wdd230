@@ -141,7 +141,7 @@ button_form.addEventListener("click", ()=>{
         }
 
         const order_date = document.createElement("p");
-        const options = ("day:long, month:short, year:numeric")
+        const options = {day:'numeric', month:"long", year:"numeric", hour:"numeric", minute:"numeric"};
         const date = new Date().toLocaleDateString("en-US", options)
         order_date.textContent = `Order Date: ${date}`
         output.appendChild(order_date);
