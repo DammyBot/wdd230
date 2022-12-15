@@ -30,9 +30,17 @@ para.forEach(pa=>{
     textAnimation.observe(pa);
 })
 
+
+const imageAniObserver = new IntersectionObserver(items=>{
+    items.forEach(item=>{
+        item.target.classList.toggle("reposition",item.isIntersecting);
+    })
+},{
+    threshold:.1,
+})
 const imagesAni = document.querySelectorAll(".image");
 imagesAni.forEach(image=>{
-    textAnimation.observe(image);
+    imageAniObserver.observe(image);
 })
 
 

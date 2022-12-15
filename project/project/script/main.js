@@ -29,11 +29,6 @@ para.forEach(pa=>{
     textAnimation.observe(pa);
 })
 
-const imagesAni = document.querySelectorAll(".image");
-imagesAni.forEach(image=>{
-    textAnimation.observe(image);
-})
-
 const fresh = document.querySelector(".drink")
 textAnimation.observe(fresh);
 
@@ -52,6 +47,18 @@ textAnimation.observe(ohead);
 const obody = document.querySelector(".obody");
 textAnimation.observe(obody);
 
+
+const imageAniObserver = new IntersectionObserver(items=>{
+    items.forEach(item=>{
+        item.target.classList.toggle("reposition",item.isIntersecting);
+    })
+},{
+    threshold:.1,
+})
+const imagesAni = document.querySelectorAll(".image");
+imagesAni.forEach(image=>{
+    imageAniObserver.observe(image);
+})
 
 
 // Header Change on Scroll
